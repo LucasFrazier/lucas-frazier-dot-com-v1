@@ -1,16 +1,18 @@
 .my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  text-align: center;    
+  background-color: var(--clr-black);
+  /* color: var(--clr-light); */
+  text-align: center;
 }
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 16px;
 }
 
 .portfolio__item {
   background: var(--clr-accent);
+  box-shadow: var(--bs);
   overflow: hidden;
 }
 

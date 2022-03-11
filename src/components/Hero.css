@@ -1,20 +1,21 @@
-.intro {
+.hero {
   position: relative;
+  background-color: var(--clr-black);
 }
 
-.intro__img {
-  box-shadow: var(--bs);
-}
-
-.section__subtitle--intro {
+.section__subtitle--hero {
   display: inline-block;
 }
 
+.hero__img {
+  border-radius: 50%;
+  box-shadow: var(--bs);
+}
+
 @media (min-width: 600px) {
-  .intro {
+  .hero {
     display: grid;
-    width: min-content;
-    margin: 0 auto;
+    justify-content: center;
     grid-column-gap: 1em;
     grid-template-areas: 
       "img title"
@@ -22,20 +23,18 @@
     grid-template-columns: min-content max-content;
   }
   
-  .intro__img {
+  .hero__img {
     grid-area: img;
     min-width: 250px;
     position: relative;
     z-index: 2;
   }    
   
-  .section__subtitle--intro {
+  .section__subtitle--hero {
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
   }
 }

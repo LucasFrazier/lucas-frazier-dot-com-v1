@@ -49,6 +49,7 @@ h3 { font-size: var(--fs-h3) }
 
 
 .section__title {
+  letter-spacing: 1px;
   margin-bottom: .25em;
 }
 
@@ -62,7 +63,9 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle {
   margin: 0;
+  font-family: var(--ff-secondary);
   font-size: var(--fs-h3);
+  letter-spacing: 0.5px;
 }
 
 .section__subtitle--hero,
@@ -70,11 +73,19 @@ h3 { font-size: var(--fs-h3) }
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
+  letter-spacing: 0.5px;
   margin-bottom: 1em;
 }
 
 .section__subtitle--work {
   color: var(--clr-accent);
-  font-weight: var(--fw-bold);
   margin-bottom: 2em;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
