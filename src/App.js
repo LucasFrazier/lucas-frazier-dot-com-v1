@@ -1,20 +1,30 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom'
 import './App.css'
+import Home from './pages/Home'
+import MemeGenerator from './pages/MemeGenerator'
+import Notes from './pages/Notes'
+import Tenzies from './pages/Tenzies'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import About from './components/About'
-import Work from './components/Work'
 import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className='App'>
-      <Header />
-      <Hero />
-      <Services />
-      <About />
-      <Work />
-      <Footer />
-    </div>
-  );
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/notes" element={<Notes />} />
+          <Route path="/tenzies" element={<Tenzies />} />
+          <Route path="/meme-generator" element={<MemeGenerator />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  )
 }

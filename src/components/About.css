@@ -7,6 +7,18 @@
   box-shadow: var(--bs);
 }
 
+.about-me__body {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-light);
+  letter-spacing: 0.5px;
+  margin: 2em auto 3.5em;
+}
+@media (min-width: 600px) {
+  .about-me__body {
+    margin: unset;
+  }
+}
+
 @media (min-width: 600px) {
   .about-me {
     display: grid;

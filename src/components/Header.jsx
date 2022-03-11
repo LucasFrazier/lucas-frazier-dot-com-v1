@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import './Header.css'
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
-  const navLinkTitles = ['home', 'services', 'about', 'work']
+  const navLinkTitles = ['home', 'meme-generator', 'notes', 'tenzies']
 
   const toggleNav = () => {
     setNavOpen(prevNavOpen => !prevNavOpen)
@@ -11,7 +12,7 @@ export default function Header() {
 
   const navLinkElements = navLinkTitles.map(navLinkTitle => (
     <li class='nav__item nav__link' onClick={toggleNav}>
-      <a href={`#${navLinkTitle}`} class='nav__link'>{navLinkTitle}</a>
+      <Link to={`/${navLinkTitle}`} class='nav__link'>{navLinkTitle}</Link>
     </li>
   ))
 
@@ -31,9 +32,9 @@ export default function Header() {
       >
         <span class='hamburger'></span>
       </button>
-      <div class='logo'>
+      <a href='/' class='logo'>
         LUCASFRAZIER.COM
-      </div>
+      </a>
       <nav class='nav'>
         <ul class='nav__list'>
           {navLinkElements}

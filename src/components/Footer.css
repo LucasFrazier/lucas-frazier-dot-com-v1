@@ -1,5 +1,5 @@
 .footer {
-  background: #111;
+  background: var(--clr-black);
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
@@ -40,3 +40,6 @@
 .social-list__link {
   padding: .5em;
 }
+
+/* Stop Font Awesome icons from being italic */
+i.fab { font-style: normal !important;}
