@@ -4,7 +4,7 @@ import './Header.css'
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
-  const navLinkTitles = ['home', 'services', 'about', 'work']
+  const navLinkTitles = ['home', 'meme-generator', 'notes', 'tenzies']
 
   const toggleNav = () => {
     setNavOpen(prevNavOpen => !prevNavOpen)
@@ -32,9 +32,9 @@ export default function Header() {
       >
         <span class='hamburger'></span>
       </button>
-      <div class='logo'>
+      <a href='/' class='logo'>
         LUCASFRAZIER.COM
-      </div>
+      </a>
       <nav class='nav'>
         <ul class='nav__list'>
           {navLinkElements}
