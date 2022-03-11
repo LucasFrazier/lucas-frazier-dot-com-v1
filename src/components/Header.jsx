@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import './Header.css'
 
 export default function Header() {
@@ -11,7 +12,7 @@ export default function Header() {
 
   const navLinkElements = navLinkTitles.map(navLinkTitle => (
     <li class='nav__item nav__link' onClick={toggleNav}>
-      <a href={`#${navLinkTitle}`} class='nav__link'>{navLinkTitle}</a>
+      <Link to={`/${navLinkTitle}`} class='nav__link'>{navLinkTitle}</Link>
     </li>
   ))
 
