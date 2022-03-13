@@ -4,6 +4,7 @@
 }
 
 .about-me__img {
+  border-radius: var(--border-radius);
   box-shadow: var(--bs);
 }
 

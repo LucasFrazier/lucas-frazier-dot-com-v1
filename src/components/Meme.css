@@ -23,7 +23,7 @@ main {
 
 .form__input {
   font-family: var(--ff-primary);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border: 1px solid #D5D4D8;
   height: 44px;
   margin-top: 8px;
@@ -36,7 +36,7 @@ main {
   font-family: var(--ff-secondary);
   font-size: 1rem;
   letter-spacing: 0.5px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   background: var(--clr-accent);
   background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(74,102,87,1) 35%, rgba(147,190,173,1) 100%);
   color: #FFF;
@@ -54,7 +54,7 @@ main {
 .meme__image {
   margin: 0 auto;
   max-width: 100%;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }
 
 .meme__text {

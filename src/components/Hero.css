@@ -6,6 +6,15 @@
 .section__subtitle--hero {
   display: inline-block;
 }
+@media screen and (min-width: 600px) {
+  .section__subtitle--hero {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+  }
+}
 
 .hero__img {
   border-radius: 50%;
@@ -29,12 +38,4 @@
     position: relative;
     z-index: 2;
   }    
-  
-  .section__subtitle--hero {
-    align-self: start;
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-  }
 }

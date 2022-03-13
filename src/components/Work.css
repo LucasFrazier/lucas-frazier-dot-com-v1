@@ -12,6 +12,7 @@
 
 .portfolio__item {
   background: var(--clr-accent);
+  border-radius: var(--border-radius);
   box-shadow: var(--bs);
   overflow: hidden;
 }

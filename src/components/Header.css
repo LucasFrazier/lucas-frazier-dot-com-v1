@@ -15,11 +15,17 @@ header {
   color: var(--clr-light);
   display: block;
   position: absolute;
-  left: 2.25em;
-  font-size: 2rem;
+  left: 3.5em;
+  font-size: 1.25rem;
   font-weight: var(--fw-bold);
   letter-spacing: 0.5px;
   text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+  .logo {
+    font-size: 2rem;
+    left: 2.25em;
+  }
 }
 
 .nav {
@@ -99,7 +105,7 @@ header {
   background: var(--clr-accent);
   width: 2.25em;
   height: 4px;
-  border-radius: 1em;
+  border-radius: var(--border-radius);
   transition: transform 250ms ease-in-out;
 }
 
