@@ -1,4 +1,4 @@
-section {
+section:not(.pane) {
   padding: 5em 2em;
 }
 
@@ -71,6 +71,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--hero,
 .section__subtitle--about {
   background: var(--clr-accent);
+  border-radius: var(--border-radius);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   letter-spacing: 0.5px;
