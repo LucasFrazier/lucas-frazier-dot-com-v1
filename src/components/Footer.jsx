@@ -3,7 +3,7 @@ import './Footer.css'
 export default function Footer() {
   return (
     <footer class="footer">
-        <a href="mailto:hello@jane.dev" class="footer__link">contact@lucasfrazier.com</a>
+        <a href="mailto:lucasfrazier1@gmail.com" class="footer__link">contact@lucasfrazier.com</a>
         <ul class="social-list">
             <li class="social-list__item">
                 <a class="social-list__link" href="https://linkedin.com/in/lucasfrazier/">

@@ -3,7 +3,7 @@ main {
   margin: 0 auto;
 }
 
-.section__title--meme-generator {
+.section__title--meme-maker {
   color: var(--clr-accent);
   text-align: center;
 }

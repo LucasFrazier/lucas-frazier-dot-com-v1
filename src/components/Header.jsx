@@ -4,7 +4,7 @@ import './Header.css'
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
-  const navLinkTitles = ['home', 'meme-generator', 'notes', 'tenzies']
+  const navLinkTitles = ['home', 'meme-maker', 'notes-app', 'dice-game']
 
   const toggleNav = () => {
     setNavOpen(prevNavOpen => !prevNavOpen)
@@ -12,7 +12,12 @@ export default function Header() {
 
   const navLinkElements = navLinkTitles.map(navLinkTitle => (
     <li class='nav__item nav__link' onClick={toggleNav}>
-      <Link to={`/${navLinkTitle}`} class='nav__link'>{navLinkTitle}</Link>
+      <Link 
+        to={`/${navLinkTitle}`} 
+        class='nav__link'
+      >
+        {navLinkTitle.replace('-', ' ')}
+      </Link>
     </li>
   ))
 
