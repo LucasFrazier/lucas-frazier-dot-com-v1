@@ -1,11 +1,5 @@
-import './Meme.css'
-
 import {useState, useEffect} from 'react'
 import './Meme.css'
-
-// const [notes, setNotes] = React.useState(
-//   JSON.parse(localStorage.getItem("notes")) || []
-// )
 
 export default function Meme() {
   const [meme, setMeme] = useState( JSON.parse(localStorage.getItem('meme')) || {
@@ -51,7 +45,7 @@ export default function Meme() {
   
   return (
     <main>
-      <h1 className='section__title section__title--meme-generator'>MEME GENERATOR</h1>
+      <h1 className='section__title section__title--meme-maker'>MEME MAKER</h1>
       <div className='form'>
         <label >
           Top text
