@@ -1,4 +1,4 @@
-# lucasfrazier.com
+# [lucasfrazier.com](https://www.lucasfrazier.com)
 
 This is my personal website, and it will always be a work in progress.
 
