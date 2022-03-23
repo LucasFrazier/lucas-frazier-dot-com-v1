@@ -17,6 +17,7 @@ export default function DiceGame() {
     }
   }, [dice])
 
+  // using function instead of const to utilize hoisting
   function generateNewDie() {
     return {
       value: Math.ceil(Math.random() * 6),
@@ -24,7 +25,8 @@ export default function DiceGame() {
       id: nanoid()
     }
   }
-  
+
+  // using function instead of const to utilize hoisting
   function allNewDice() {
     const newDice = []
     for (let i = 0; i < 10; i++) {
@@ -33,7 +35,7 @@ export default function DiceGame() {
     return newDice
   }
   
-  function rollDice() {
+  const rollDice = () => {
     if(!win) {
       setDice(oldDice => oldDice.map(die => {
         return die.isHeld ? 
@@ -46,7 +48,7 @@ export default function DiceGame() {
     }
   }
   
-  function holdDice(id) {
+  const holdDice = id => {
     setDice(oldDice => oldDice.map(die => {
       return die.id === id ? 
         {...die, isHeld: !die.isHeld} :
