@@ -17,16 +17,16 @@ export default function Notes() {
     localStorage.setItem('notes', JSON.stringify(notes))
   }, [notes])
   
-  function createNewNote() {
+  const createNewNote = () => {
     const newNote = {
       id: nanoid(),
-      body: "# Type your markdown note's title here"
+      body: '# Type your markdown note title here'
     }
     setNotes(prevNotes => [newNote, ...prevNotes])
     setCurrentNoteId(newNote.id)
   }
   
-  function updateNote(text) {
+  const updateNote = text => {
     // Put the most recently-modified note at the top
     setNotes(oldNotes => {
       const newArray = []
@@ -46,12 +46,12 @@ export default function Notes() {
     })
   }
   
-  function deleteNote(event, noteId) {
+  const deleteNote = (event, noteId) => {
     event.stopPropagation()
     setNotes(oldNotes => oldNotes.filter(note => note.id !== noteId))
   }
   
-  function findCurrentNote() {
+  const findCurrentNote = () => {
     return notes.find(note => {
       return note.id === currentNoteId
     }) || notes[0]
