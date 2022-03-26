@@ -7,7 +7,9 @@ img {
   max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold) }
+strong {
+  font-weight: var(--fw-bold);
+}
 
 :focus {
   outline: 3px solid var(--clr-accent);
@@ -18,12 +20,12 @@ strong { font-weight: var(--fw-bold) }
 
 .btn {
   display: inline-block;
-  padding: .5em 2.5em;
+  padding: 0.5em 2.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -43,14 +45,19 @@ h3 {
   margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
-
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
 
 .section__title {
   letter-spacing: 1px;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .section__title--hero {
@@ -78,7 +85,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about {
   background: var(--clr-accent);
   border-radius: var(--border-radius);
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   letter-spacing: 0.5px;
   margin-bottom: 1em;

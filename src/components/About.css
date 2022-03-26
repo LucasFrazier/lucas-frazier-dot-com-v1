@@ -24,17 +24,17 @@
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
-    grid-template-areas: 
-        "title img"
-        "subtitle img"
-        "text img";
+    grid-template-areas:
+      'title img'
+      'subtitle img'
+      'text img';
     grid-column-gap: 2em;
   }
-  
+
   .section__title--about {
     grid-area: title;
   }
-  
+
   .section__subtitle--about {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -44,7 +44,7 @@
     padding-left: 1em;
     padding-right: calc(200px + 4em);
   }
-  
+
   .about-me__img {
     grid-area: img;
     position: relative;

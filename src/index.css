@@ -11,24 +11,23 @@
 :root {
   --ff-primary: Montserrat, sans-serif;
   --ff-secondary: 'Source Sans Pro', sans-serif;
-  
+
   --fw-light: 300;
   --fw-reg: 400;
   --fw-med: 500;
   --fw-bold: 700;
-  
-  --clr-light: #F8F8F8;
+
+  --clr-light: #f8f8f8;
   --clr-dark: #282828;
   --clr-black: #111;
-  --clr-accent: #93BEAD;
-  
+  --clr-accent: #93bead;
+
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
-  
-  --bs: 0.25em 0.25em 0.75em rgb(255, 255, 255),
-        0.125em 0.125em 0.25em rgb(255, 255, 255);
+
+  --bs: 0.25em 0.25em 0.75em rgb(255, 255, 255), 0.125em 0.125em 0.25em rgb(255, 255, 255);
 
   --border-radius: 3px;
 }
@@ -45,7 +44,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   background: var(--clr-dark);

@@ -24,7 +24,7 @@ main {
 .form__input {
   font-family: var(--ff-primary);
   border-radius: var(--border-radius);
-  border: 1px solid #D5D4D8;
+  border: 1px solid #d5d4d8;
   height: 44px;
   margin-top: 8px;
   text-indent: 5px;
@@ -38,8 +38,13 @@ main {
   letter-spacing: 0.5px;
   border-radius: var(--border-radius);
   background: var(--clr-accent);
-  background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(74,102,87,1) 35%, rgba(147,190,173,1) 100%);
-  color: #FFF;
+  background: linear-gradient(
+    90deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(74, 102, 87, 1) 35%,
+    rgba(147, 190, 173, 1) 100%
+  );
+  color: #fff;
   border: none;
   cursor: pointer;
   height: 46px;
@@ -68,16 +73,8 @@ main {
   font-family: Impact, sans-serif;
   font-size: 2em;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000,
+    2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
 }

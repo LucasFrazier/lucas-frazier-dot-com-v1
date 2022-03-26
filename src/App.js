@@ -1,15 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom'
-import './App.css'
-import Home from './pages/Home'
-import MemeMaker from './pages/MemeMaker'
-import NotesApp from './pages/NotesApp'
-import DiceGame from './pages/DiceGame'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import MemeMaker from './pages/MemeMaker';
+import NotesApp from './pages/NotesApp';
+import DiceGame from './pages/DiceGame';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -26,5 +22,5 @@ export default function App() {
         <Footer />
       </div>
     </Router>
-  )
+  );
 }

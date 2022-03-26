@@ -26,16 +26,16 @@
     display: grid;
     justify-content: center;
     grid-column-gap: 1em;
-    grid-template-areas: 
-      "img title"
-      "img subtitle";
+    grid-template-areas:
+      'img title'
+      'img subtitle';
     grid-template-columns: min-content max-content;
   }
-  
+
   .hero__img {
     grid-area: img;
     min-width: 250px;
     position: relative;
     z-index: 2;
-  }    
+  }
 }
