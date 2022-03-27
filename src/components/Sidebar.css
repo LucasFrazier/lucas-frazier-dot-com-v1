@@ -94,7 +94,7 @@
 
 .gg-trash::after,
 .gg-trash::before {
-  content: "";
+  content: '';
   display: block;
   box-sizing: border-box;
   position: absolute

@@ -3,7 +3,7 @@ import './MemeMaker.css'
 
 export default function MemeMaker() {
   return (
-    <section className="MemeMaker">
+    <section className='MemeMaker'>
       <Meme />
     </section>
   )

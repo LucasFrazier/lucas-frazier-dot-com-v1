@@ -15,7 +15,7 @@ export default function Services() {
         </div>
         <div class='service'>
           <h3>UX/UI</h3>
-          <p>Accessibility. Usability. Test test test. You are not the user, and neither am I.</p>
+          <p>Accessibility. Usability. Testing. You are not the user, and neither am I.</p>
         </div>
         <div class='service'>
           <h3>Agile</h3>
