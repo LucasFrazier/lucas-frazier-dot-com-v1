@@ -19,16 +19,7 @@
 
 .service {
   max-width: 275px;
-  margin: 0 auto;
-}
-
-.service:nth-child(2) {
-  margin: 3em auto;
-}
-@media screen and (min-width: 800px) {
-  .service:nth-child(2) {
-    margin: unset;
-  }
+  margin: 3em auto 0;
 }
 
 .service h3 {

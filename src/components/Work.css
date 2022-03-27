@@ -1,13 +1,14 @@
 .my-work {
   background-color: var(--clr-black);
-  /* color: var(--clr-light); */
   text-align: center;
 }
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-gap: 25px;
+  margin: 0 auto;
+  /* max-width: 547px; */
 }
 
 .portfolio__item {
