@@ -17,11 +17,11 @@ export default function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/notes-app" element={<NotesApp />} />
-          <Route path="/dice-game" element={<DiceGame />} />
-          <Route path="/meme-maker" element={<MemeMaker />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/" element={<Home />} />
+          <Route path='/notes-app' element={<NotesApp />} />
+          <Route path='/dice-game' element={<DiceGame />} />
+          <Route path='/meme-maker' element={<MemeMaker />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
         </Routes>
         <Footer />
       </div>

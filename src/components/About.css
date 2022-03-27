@@ -25,9 +25,9 @@
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas: 
-        "title img"
-        "subtitle img"
-        "text img";
+        'title img'
+        'subtitle img'
+        'text img';
     grid-column-gap: 2em;
   }
   
