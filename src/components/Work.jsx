@@ -4,7 +4,7 @@ export default function Work() {
   return (
     <section class='my-work' id='work'>
         <h2 class='section__title section__title--work'>THE PROOF</h2>
-        <p class='section__subtitle section__subtitle--work'>Professional and personal examples</p>
+        <p class='section__subtitle section__subtitle--work'>Professional and Personal Portfolio</p>
         <div class='portfolio'>
             <a href='https://www.eachandevery.com' class='portfolio__item'>
               <img src='./images/portfolio-01.png' alt='' class='portfolio__img' />
