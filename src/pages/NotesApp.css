@@ -5,7 +5,13 @@
 
 .section__title--notes-app {
   color: var(--clr-accent);
+  font-size: var(--fs-h2);
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .section__title--notes-app {
+    font-size: var(--fs-h1);
+  }
 }
 
 .pane {

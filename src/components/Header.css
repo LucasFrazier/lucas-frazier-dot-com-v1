@@ -84,16 +84,21 @@ header {
   text-decoration: none;
   text-transform: uppercase;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .nav__link {
     font-size: var(--fs-body);
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
 
 
 .nav__link:hover {
   color: var(--clr-accent);
+}
+
+.social-list__link { 
+  color: inherit;
+  text-decoration: none;
 }
 
 .nav-toggle {
