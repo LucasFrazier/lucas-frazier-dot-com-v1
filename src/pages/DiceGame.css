@@ -10,7 +10,13 @@
 
 .section__title--dice-game {
   color: var(--clr-accent);
+  font-size: var(--fs-h2);
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .section__title--dice-game {
+    font-size: var(--fs-h1);
+  }
 }
 
 .dice-container {
@@ -18,6 +24,7 @@
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .die-face {
