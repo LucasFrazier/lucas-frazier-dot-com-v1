@@ -10,7 +10,7 @@ header {
   background-color: var(--clr-black);
   z-index: 1000;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   header {
     justify-content: space-between;
   }
@@ -26,7 +26,7 @@ header {
   letter-spacing: 0.5px;
   text-decoration: none;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .logo {
     font-size: 2rem;
     position: static;
@@ -46,7 +46,7 @@ header {
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .nav {
     background: unset;
     position: unset;
@@ -64,13 +64,13 @@ header {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .nav__list {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .nav__item:nth-child(1) {
     display: none;
   }
@@ -108,10 +108,14 @@ header {
   cursor: pointer;
   z-index: 1000;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .nav-toggle {
     display: none;
   }
+}
+
+.nav-open {
+  overflow: hidden;
 }
 
 .nav-open .nav {
