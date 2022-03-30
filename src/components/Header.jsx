@@ -4,6 +4,7 @@ import './Header.css'
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const navLinkTitles = ['home', 'meme-maker', 'notes-app', 'dice-game']
 
   const toggleNav = () => {
@@ -21,12 +22,25 @@ export default function Header() {
     </li>
   ))
 
-
   useEffect(() => {
     const bodyClassList = document.body.classList
 
     navOpen ? bodyClassList.add('nav-open') : bodyClassList.remove('nav-open')
   }, [navOpen])
+
+  useEffect(() => {
+    const watchWidth = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', watchWidth)
+
+    windowWidth >= 1024 && (
+      navOpen && setNavOpen(prevNavOpen => !prevNavOpen)
+    )
+
+    return () => window.removeEventListener('resize', watchWidth)
+  }, [windowWidth, navOpen])
 
   return (
     <header>
