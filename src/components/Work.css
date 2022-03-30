@@ -8,7 +8,7 @@
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-gap: 25px;
   margin: 0 auto;
-  /* max-width: 547px; */
+  max-width: 547px;
 }
 
 .portfolio__item {
@@ -33,4 +33,13 @@
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: .5;
+}
+
+@media screen and (min-width: 339px) and (max-width: 488px) {
+  #work > div > a:nth-child(3) {
+    grid-column: 2 / 3;
+  }
+  #work > div > a:nth-child(4) {
+    grid-row: 2;
+  }
 }
