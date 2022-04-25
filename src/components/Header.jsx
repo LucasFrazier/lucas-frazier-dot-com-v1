@@ -5,7 +5,7 @@ import './Header.css'
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-  const navLinkTitles = ['home', 'meme-maker', 'notes-app', 'dice-game']
+  const navLinkTitles = ['home', 'meme-maker', 'notes-app', 'dice-game', 'shop']
 
   const toggleNav = () => {
     setNavOpen(prevNavOpen => !prevNavOpen)
