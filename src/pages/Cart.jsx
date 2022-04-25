@@ -23,7 +23,7 @@ function Cart() {
     
     return (
       <section className='cart-page'>
-        <h1>Check out</h1>
+        <h1 className='section__title section__title--dice-game'>CART</h1>
         {cartItemElements}
         <p className='total-cost'>Total: {totalCostDisplay}</p>
         {

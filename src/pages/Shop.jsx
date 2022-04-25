@@ -12,11 +12,12 @@ export default function Shop() {
     ))
     
     return (
-      <main className='Shop'>
+      <section className='Shop'>
+        <h1 className='section__title section__title--meme-maker'>SHOP</h1>
         <Link to='/cart'>Go to Cart</Link>
         <div className='products'>
           {productElements}
         </div>
-      </main>
+      </section>
     )
 }

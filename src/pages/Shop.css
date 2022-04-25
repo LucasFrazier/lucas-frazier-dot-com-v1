@@ -1,4 +1,13 @@
 .products {
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+@media screen and (min-width: 600px) {
+  .products {
+    grid-template: 1fr/ 1fr 1fr 1fr;;
+  }
 }

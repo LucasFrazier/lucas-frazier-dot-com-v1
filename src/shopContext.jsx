@@ -3,14 +3,16 @@ import React, { useState, useEffect } from 'react'
 const ShopContext = React.createContext()
 
 function ShopContextProvider({children}) {
-    const [allProducts, setallProducts] = useState([])
+    const [allProducts, setAllProducts] = useState([])
     const [cartItems, setCartItems] = useState([])
     
-    const url = 'https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json'
     useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setallProducts(data))
+      async function getProducts() {
+        const res = await fetch('https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json')
+        const data = await res.json()
+        setAllProducts(data)
+      }
+      getProducts()
     }, [])
     
     function toggleFavorite(id) {
@@ -21,7 +23,7 @@ function ShopContextProvider({children}) {
             return photo
         })
         
-        setallProducts(updatedArr)
+        setAllProducts(updatedArr)
     }
     
     function addToCart(newItem) {
